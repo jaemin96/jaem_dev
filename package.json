@@ -19,7 +19,10 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.1"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
