@@ -7,17 +7,52 @@ module.exports = {
     es6: true,
   },
   extends: [
-    "eslint:recommended",
-    "eslint-config-prettier",
-    "plugin:prettier/recommended",
+    'eslint:recommended',
+    'eslint-config-prettier',
+    'plugin:prettier/recommended',
+    'prettier',
+    // 'plugin:react/recommended'
+    // 'plugin:react-hooks/recommended',
+    // 'plugin:jsx-a11y/strict',
+    // 'plugin:testing-library/react',
   ],
-  overrides: [],
-  parser: "@typescript-eslint/parser",
+  overrides: [
+    // {
+    //   files: [],
+    //   env: {},
+    // },
+  ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  plugins: ["import", "@typescript-eslint"],
-  settings: {},
-  rules: { "no-console": "warn" },
+  plugins: [
+    'import',
+    '@typescript-eslint',
+    // "react"
+    // 'react-hooks',
+    // 'jsx-a11y',
+  ],
+  settings: {
+    // # react version을 자동으로 탐지 - 최신 버전
+    // react: {
+    //   version: 'detect',
+    // },
+  },
+  rules: {
+    'no-console': 'warn',
+    'prettier/prettier': [
+      'warn',
+      {
+        singleQuote: true,
+        semi: true,
+        trailingComma: 'es5',
+        tabWidth: 2,
+        quoteProps: 'as-needed',
+        printWidth: 120,
+        htmlWhitespaceSensitivity: 'css',
+      },
+    ],
+  },
 };
