@@ -1,9 +1,9 @@
 {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": false,
-    "singleQuote": true,
-    "quoteProps": "as-needed",
-    "printWidth": 120,
-    "htmlWhitespaceSensitivity": "css"
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "quoteProps": "as-needed",
+  "printWidth": 120,
+  "htmlWhitespaceSensitivity": "css"
 }
