@@ -18,7 +18,7 @@
   "private": "true",
   "scripts": {
     "lint": "eslint .",
-    "style:watch": "sass --watch scss/*.scss scss/style.css"
+    "style:watch": "sass --watch scss/main.scss scss/main.css"
   },
   "dependencies": {
     "node-sass": "^8.0.0",
