@@ -1,27 +1,19 @@
-/* ============================================= */
-/*                Style Abstract
-/* ============================================= */
+/* Abstract */
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
-/* ============================================= */
-/*                Style Vendor
-/* ============================================= */
+/* Vendor */
 @import 'vendors/tailwind';
 
-/* ============================================= */
-/*                Style Base
-/* ============================================= */
+/* Base */
 @import 'base/reset';
+@import 'base/animations';
+@import 'base/typography';
 
-/* ============================================= */
-/*                Style Components
-/* ============================================= */
+/* Components */
 @import 'components/buttons';
 
-/* ============================================= */
-/*                Style layout
-/* ============================================= */
+/* layout */
 @import 'layout/footer';
 @import 'layout/forms';
 @import 'layout/grid';
@@ -29,12 +21,8 @@
 @import 'layout/navigation';
 @import 'layout/sidebar';
 
-/* ============================================= */
-/*                Style Pages
-/* ============================================= */
+/* Pages */
 @import 'pages/home';
 
-/* ============================================= */
-/*                Style Theme
-/* ============================================= */
+/* Theme */
 @import 'themes/theme';
