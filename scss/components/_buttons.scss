@@ -1,5 +1,4 @@
 @import '../abstracts/variables';
-// @import "../abstracts/mixins";
 
 button {
   @include components-button-style($primary-color, 10rem, 2rem);
