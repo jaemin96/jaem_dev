@@ -18,7 +18,15 @@
   "private": "true",
   "scripts": {
     "lint": "eslint .",
-    "style:watch": "sass --watch scss/main.scss scss/main.css"
+    "style:watch": "sass --watch scss/main.scss scss/main.css",
+    "sync-dotenv-slack": "envbot"
+  },
+  "envbot": {
+    "channel": "dotenv",
+    "include": [
+      "*",
+      "!SECRET"
+    ]
   },
   "dependencies": {
     "node-sass": "^8.0.0",
@@ -31,6 +39,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "sync-dotenv-slack": "^0.1.0"
   }
 }
